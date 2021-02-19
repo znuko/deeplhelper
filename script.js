@@ -1,9 +1,10 @@
 // 規則の初期設定
-const defaultRules = String.raw`[
-  [/\n(?!\n)/g, " "],
-  [/-\s/g, ""],
-  [/\.\s+/g, ".\n"],
-]`;
+const defaultRules = String.raw`
+[/\n(?!\n)/g, " "],
+[/-\s/g, ""],
+[/\.\s+/g, ".\n"],
+`.replace(/\n/, "");
+
 $("#rule").val(defaultRules);
 
 // sample dirty text
