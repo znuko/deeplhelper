@@ -15,7 +15,7 @@ awings. In equally matters showing greatly it as. Want
 name any wise are able park when. Saw vicinity judgme-
 nt remember finished men throwing.`;
 
-// Deepl base URL
+// DeepL base URL
 var baseUrl = "https://www.deepl.com/translator#en/ja/";
 
 // リアルタイム更新
