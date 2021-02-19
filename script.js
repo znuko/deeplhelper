@@ -100,18 +100,9 @@ function replace(text) {
     text = text.replace(rules[i][0], rules[i][1]);
   }
   return text;
-  // return text
-  //   .replace(rules[0][0], rules[0][1])
-  //   .replace(rules[1][0], rules[1][1])
-  //   .replace(rules[2][0], rules[2][1]);
-  // return text
-  //   .replace(/\n(?!\n)/g, " ")
-  //   .replace(/-\s/g, "")
-  //   .replace(/\.\s+/g, ".\n")
-  //   .replace(eval("/a/g"), "B");
 }
 
 function clear(inputSelector) {
-  // テキストエリアをクリア
+  // テキスト入力エリアをクリア
   $(inputSelector).val("");
 }
