@@ -61,7 +61,7 @@ $("#reset-rule").on("click", function () {
 
 // Clear rule ボタン
 $("#clear-rule").on("click", function () {
-  $("#rule").val("[\n  \n]");
+  $("#rule").val("");
 });
 
 // クリップボードを取得
@@ -94,7 +94,7 @@ function format(inputSelector, outputSelector) {
 
 // テキスト置換
 function replace(text) {
-  var rules = eval($("#rule").val());
+  var rules = eval("[" + $("#rule").val() + "]");
   for (var i = 0; i < rules.length; i++) {
     text = text.replace(rules[i][0], rules[i][1]);
   }
