@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/latest/normalize.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Deepl Helper</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Deepl Helper</h1>
+        <p>テキストを整形してからDeepl翻訳！</p>
+      </div>
+    </header>
+    <div class="content">
+      <div class="container">
+        <h2>入力</h2>
+        <textarea id="input" cols="60" rows="10"></textarea><br />
+        <input id="clear" type="button" value="Clear" />
+        <input id="paste" type="button" value="Paste" />
+        <input id="format" type="button" value="Format" />
+        <input id="sample" type="button" value="Sample" />
+
+        <h2>整形後</h2>
+        <textarea id="output" cols="60" rows="10"></textarea><br />
+        <input id="open" type="button" value="Open Deepl" />
+
+        <h2>Deepl URL</h2>
+        <a id="url" href="#" target="_blank"></a>
+
+        <h2>整形機能</h2>
+        <ul>
+          <li>ピリオドの後に改行を入れる</li>
+          <li>単語の後の改行はスペースに直す</li>
+          <li>ハイフン直後に改行がある場合、それらを削除する</li>
+        </ul>
+
+        <h3>置換規則</h3>
+        <p>正規表現で規則を指定できます。</p>
+        <textarea name="" id="rule" cols="30" rows="10"> </textarea><br />
+        <input id="reset-rule" type="button" value="Reset" />
+        <input id="clear-rule" type="button" value="Clear" />
+        <!-- end container -->
+      </div>
+    </div>
+
+    <footer>
+      <div class="contaianer">
+        <div class="copyright">&copy; znuko</div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

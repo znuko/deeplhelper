@@ -1,0 +1,68 @@
+:root {
+  --tcolor: lightgray;
+  --bgcolor: #1e1e1e;
+  --bgcolor-sub: #3c3c3c;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bgcolor);
+  color: var(--tcolor);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+a {
+  color: skyblue;
+}
+
+input[type="button"] {
+  background: var(--bgcolor-sub);
+  color: var(--tcolor);
+  border: 0px;
+  border-radius: 3px;
+  box-shadow: 0 3px var(--bgcolor-sub);
+}
+
+input[type="button"]:active {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
+textarea {
+  background-color: var(--bgcolor-sub);
+  color: var(--tcolor);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: var(--bgcolor-sub);
+  padding: 1px 0;
+}
+
+footer {
+  background-color: var(--bgcolor-sub);
+  margin-top: 50px;
+  padding: 10px 0;
+}
+footer .copyright {
+  text-align: center;
+}
