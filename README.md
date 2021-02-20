@@ -1,7 +1,5 @@
 # deepL Helper
 
-今読んでる英語PDFがダメダメなので作りました。
-
-適宜規則を調整してください。jsで動いています。
+文の途中の改行などを消してからDeepL翻訳するツールです。
 
 https://znuko.github.io/deeplhelper/
